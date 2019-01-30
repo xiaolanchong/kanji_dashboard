@@ -1,0 +1,78 @@
+
+
+body {
+	font-family: Tahoma, Verdana;
+	background-color: black;
+	color: white;
+}
+
+  .ui-tooltip {
+    box-shadow: 0 0 3px black;
+  }
+
+.kanji_widget {
+    padding-left: 3px;
+	padding-right: 3px;
+	/*padding: 1px;*/
+	border: 1px solid #666666;
+	border-radius: 3px;
+	font-size: 22px;
+}
+
+.kanji_widget:hover {
+    background-color: #606060;
+	cursor: pointer;
+}
+
+.kanjipopup {
+    background-color: black !important;
+	color: white !important;
+}
+
+.kanken_1 {
+	color: #94A1B4;
+}
+
+.kanken_1_5 {
+	color: #94A1B4;
+}
+
+.kanken_ {
+	color: #515860;
+}
+
+/* Yarxi overriden styles */
+
+/* kanji popup defined word*/
+td.tjtext {
+white-space: nowrap;
+}
+
+td.tjtext a {
+	color: white !important;	
+}
+/* popup kanji */
+#thekanji a {
+	color: #a1c1d8 !important;	
+}
+
+#nick span {
+	color: #59b2ba !important;
+}
+
+.ttrans {
+	color: #ba5961 !important;
+}
+
+.kunreading {
+	color: #ba5961 !important;
+}
+
+.onyomi {
+	color: #92ba59 !important;
+}
+
+td.kunj a.kanji {
+	color: #a09080 !important;
+}
+

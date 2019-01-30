@@ -1,0 +1,609 @@
+/*
+YARXI blue: #6060b0
+YARXI red (JText): #800000
+YARXI yellow (nanori): #707000
+Onyomi color (aqua): #008080
+YARXI grey: #808080
+Latin color: #9010a8
+Compounds title: c6631a
+
+The color between the columns the YARXI menu 9cb2bd
+The color of buttons: d9d9d9
+*/
+
+/********************* The global page structure ******/
+body
+{
+	font-family: Verdana, Arial, Helv, Sans-serif;
+	font-size:8pt;
+	margin-top:2px;
+	margin-bottom:0px;
+}
+
+#body
+{
+	position:fixed;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	padding-top:5px;
+	padding-bottom:5px
+}
+
+#ct
+{
+	position:relative;
+    background-color:#d9d9d9;
+	border:1px solid #210ea6;
+	width:80em;
+	height:100%;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#head {
+    position:relative;
+    top:0px;
+    left:0px;
+    height:78px;
+	margin:0px;
+	background-image:url(../img/YarxiOnlineTopBar.gif);
+	background-repeat:no-repeat;
+	background-color:#ffffff;
+	vertical-align:middle;
+}
+
+#ads
+{
+	position:absolute;
+	left:540px;
+	top:0px;
+	bottom:0px;
+	vertical-align:middle;
+	font-size:10pt;
+	margin:0;
+	padding-top:10px;
+	text-align:center;
+}
+
+#ads a
+{
+	padding-left:5pt;
+	padding-right:5pt;
+}
+
+#ads a img
+{
+	border:0;
+}
+	
+#tabstrip 
+{
+	background-color:#ffffff;
+	display:block;
+	margin: 0;
+    padding: 0;
+    width:100%;
+    /*height:2em;*/
+    float:left;
+    overflow:visible;
+    border-bottom:1px solid #210ea6;
+}
+
+#tabstrip a 
+{
+    display:block;
+    float:left;
+	padding:3px 1em 3px 1em;
+	margin:3px 0em 0px 1em;
+	border-left:solid 1px #210ea6;
+	border-right:solid 1px #210ea6;
+	border-top:solid 1px #210ea6;
+	text-decoration:none;
+	background-color:#a0a0a0;
+	color:black;
+}
+
+#tabstrip a:visited:
+{
+	color:Black;
+}
+
+#tabstrip a.current:hover
+{
+	background-color:#e9e9e9;
+}
+
+#tabstrip a.current 
+{
+	position:relative;
+	top:1px;
+	background-color:#d9d9d9;
+    border-bottom:solid 1px #d9d9d9;
+}
+
+#tabstrip a:hover
+{
+	background-color:#b0b0b0;
+}
+
+#tabbody
+{
+	position:relative;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:450px;
+	clear:both;
+}	
+
+.main 
+{
+	background-color:#d9d9d9;
+	display:none;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+/**************** The kanji search area stuff **********************************/	
+#kanji
+{
+	padding-top:6px;
+	padding-bottom:9px;
+}
+
+#menu
+{
+    border: solid 1px black;
+    background-color:#9cb2bd;
+    display:block;
+    float:left;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    height: 100%;
+    padding-top:2px;
+    position:relative;
+}
+
+#menu p img
+{
+    display:inline;
+    float:left;
+    border:solid 1px black;
+    margin-right:8px;
+    background-color:#d9d9d9;
+    padding:0px 0px 1px 0px;
+    width:18px;
+    height:17px;
+    cursor:pointer;
+}
+
+#menufull, #menucoll
+{
+	x-position:absolute;
+}
+
+#menufullimg
+{
+	position:absolute;
+	top:2px;
+	left:0;
+	border:0;
+	pointer-events:none;
+}
+
+#menu p i
+{
+    display:inline;
+    float:left;
+    border:solid 1px black;
+    margin-right:8px;
+    background-color:#d9d9d9;
+    padding:0px 0px 1px 0px;
+    width:18px;
+    height:17px;
+    cursor:pointer;
+}
+
+#menu div.hilite p i {background-color:#808080;}
+
+#menu p i.c2 {margin-left:28px;}
+#menu p i.c3 {margin-left:56px;}
+#menu p i.c4 {margin-left:84px;}
+#menu p i.c2p {margin-left:14px;}
+#menu p i.c8p {margin-left:77px;}
+#menu p i.c8q {margin-left:7px;}
+#menu p i.c9p {margin-left:28px;}
+#menu p i.c10p {margin-left:161px;margin-right:0px;}
+#menu p i.c10q {margin-left:7px;margin-right:0px;}
+#menu p i.t{margin-right:1px;}
+
+#menu p span
+{
+	float:left;
+	width:28px;
+	height:20px;
+}
+
+
+#menucoll {display:none;}
+/*****************/
+
+#ksearch
+{
+    float:left;
+    margin-top:-5px;
+}
+
+#ksearch fieldset
+{
+    width:5.6em;
+    font-family:Arial;
+    font-size:8pt;
+    display:block;
+    margin:2px 3px 0px 3px;
+    text-align:center;
+}
+
+#ksearch fieldset legend
+{
+    font-family:Arial;
+    font-size:8pt;
+    color:#000000;
+    text-align:center;
+}
+
+#ksearch fieldset input
+{
+    width:80%;
+}
+
+#ks_srad table
+{
+    margin:auto;
+}
+
+#ks_srad table tbody tr td a
+{
+    display:block;
+}
+
+#ks_srad table tbody tr td a img
+{
+    width:18px;
+    height:17px;
+    border:0;
+    visibility:hidden;
+}
+
+#ks_search input.b
+{
+    font-family: Times New Roman;
+    font-size:12pt;
+    font-weight:bold;
+    width:3.2em;
+}
+
+#ks_search input.cr
+{
+    width:auto;
+}
+
+#ks_search div
+{
+	width:auto;
+	text-align:left;
+	margin-left:0.3em;
+}
+
+#ks_wait {display:none;text-align:center; margin-top:5px;}
+
+
+/*************** results stuff***/	
+#res
+{
+	height:100%;
+	overflow:hidden;
+}
+
+#strip
+{
+	margin-right:5px;
+	margin-left:5px;
+	margin-bottom:2px;
+	border:solid 1px #210ea6;
+	overflow-x:scroll;
+	overflow-y:hidden;
+	font-size: 16pt;
+	font-family: MS PGothic,MS Gothic,Arial;
+	white-space:nowrap;
+	display:none;
+}
+
+#strip a
+{
+	display:inline-block;
+	margin-left:2px;
+	padding:2px 2px 2px 2px;
+	text-decoration:none;
+	color:Black;
+}
+
+#entryframe
+{
+	margin-left:5px;
+	margin-right:5px;
+	overflow:hidden;
+	display:none;
+	border:solid 1px #210ea6;
+}
+
+#entry
+{
+	height:100%;
+	overflow-y:scroll;
+	white-space:nowrap;
+}
+
+#entry p {margin-left:4px;}
+#entry table {margin-left:4px;}
+
+#entrymenu 
+{
+	overflow:hidden;
+	width:100%;
+	padding:1px 0px 1px 3px;
+	border-bottom:solid 1px #210ea6;
+}
+
+#entrymenu a
+{
+	display:block;
+	float:left;
+	padding:2px 3px 2px 3px;
+	border-style:outset;
+	border-width:2px;
+	padding:2px 5px 2px 5px;
+	text-decoration:none;
+	color:#000000;
+}
+
+/****************************** Tango search stuff ***********************/
+#tsearchk
+{
+	width:40%;
+	float:left;
+	margin:5px;
+	height:5.4em;
+}
+
+#tsearcht
+{
+	margin:5px 5px 0px 5px;
+	vertical-align:middle;
+	height:5.4em;
+}
+
+#tsearchk table {float:left;}
+
+#tsearchk table tr td 
+{
+	width:1.2em;
+	font-family: MS Gothic,MS PGothic,Sans Serif;
+    font-size:22pt;
+    font-family:MS Mincho,MS PMincho,Meiryo,Serif;
+    height:1.2em;
+    text-align:center;
+    vertical-align:middle;
+    cursor:pointer;
+}
+
+#tsearchk span
+{
+	padding:5px 5px 5px 5px;
+	margin-left:1em;
+}
+
+#tsearcht span
+{
+	display:inline-block;
+	padding:5px;
+}
+
+#tsearcht span input[type="text"] {width:10em;}
+
+#tresframe
+{
+	position:relative;
+	clear:both;
+	height:36em;
+	overflow:hidden;
+}
+
+#tres
+{
+	border-top:solid 1px #210ea6;
+	position:absolute;
+	background-color:#b8e0c8;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	overflow-y: scroll;
+}
+
+
+/********************************* The entry/compound stuff */
+
+#khead {margin-top:4px;}
+
+#thekanji 
+{
+	border-style:ridge;
+	text-align:center;
+	font-size:45pt;
+	font-family:MS Mincho,MS PMincho,Meiryo,Serif;
+}
+
+a.kanji {text-decoration:none;}
+
+#thekanji a{text-decoration:none; color:#000000;}	
+#thekanji a img {border:0}
+
+.util {color:#808080; font-family:Arial; font-size:8pt;}
+
+.str {color:#808080; font-family:Arial; font-size:8pt;vertical-align:bottom;}
+
+#nick {vertical-align:top;}
+
+#nick span {display:inline-block;
+	padding:1px 2px;
+	margin:1px;
+	color:#808080;
+	font-family:Times New Roman;
+	font-size:10pt;
+	border:1px solid #808080;}
+	
+#nick span.unednick{color:#800000;border:1px solid #800000;font-weight:bold;}
+
+#gtr table {float:left}
+
+#entry p.onyomi {color:#008080;font-family:Times New Roman;font-size:12pt;margin:2px 0px 2px 1.5em;}
+
+.kokuji {color: #d90000; font-family:Tahoma;font-size:8pt;}
+
+table.kun tr td {vertical-align:top;}
+
+.kunj {font-family: MS Gothic,MS PGothic,Sans Serif;
+    font-size:12pt;
+    height:auto;}
+    
+td.kunj a.kanji {text-decoration:none; color:#000000;} 
+
+.kunreading {color:#800000; font-family:Times New Roman; font-size:10pt;}
+
+.kunreading_ch {color:#008080; font-family:Times New Roman; font-size:10pt;}
+
+.kunreading_pale {color:#a86868; font-family:Times New Roman; font-size:10pt;}
+
+.mmno {vertical-align:top;}
+
+.kuntrans {font-family:Times New Roman;font-size:10pt;vertical-align:top;}
+
+.kundash {font-family:Times New Roman;font-size:10pt;font-weight:bold;vertical-align:top;}
+
+.pale {color: #606060}
+
+.bluetopref {color:#6060b0; font-family:Times New Roman;font-size:9pt;}
+
+.bluetoprefkanji {font-size:20pt;}
+
+.bluetoprefkanji a {text-decoration:none; color:#6060b0;}
+
+.greytopref_kanji {font-family:MS Mincho,MS PMincho,Meiryo,Serif;color:#808080; font-size:45pt;}
+
+.greytopref_kanji a {text-decoration:none; color:#808080;}
+
+.greytopref_text {color:#808080; font-family:Arial;font-size:7pt;}
+
+.grref {border-left-width:1px;
+	border-left-style:solid;
+	border-left-color:#6060b0;
+	color:#6060b0;
+	padding-left:5px;
+	margin-left:5px;}
+	
+.grref a {text-decoration:none; color:#6060b0;}
+	
+.lref {color:#6060b0;}
+
+.lref a {text-decoration:none; color:#6060b0;}
+
+.ref {color:#6060b0;}
+
+.ref a {text-decoration:none; color:#6060b0;}
+
+.latin {color:#9010a8}
+
+.comment {font-weight:normal;color:#6060b0;font-family:Times New Roman;font-size:10pt;}
+
+.comment a.kanji {color:#6060b0;}
+
+.comptitle {font-family:Arial; font-size:8pt; font-weight:bold; color:#c6631a}
+
+.grouptitle 
+{
+	font-family:Times New Roman;
+	font-size:10pt;
+	font-weight:bold;
+	margin-top:8px;
+	margin-bottom:4px;
+}
+
+.grouptitlereading {color:#008080; font-weight:normal;}
+
+.gtatgrey {color:#606060;font-weight:normal;}
+
+.gtat {color:#c6631a}
+
+.gtatbi {font-style:italic;font-weight:bold;}
+
+.group {margin-left:10px;}
+
+table.comp tr td {vertical-align:top;font-family:Times New Roman,Serif;font-size:10pt;}
+
+.ttrans {font-family:Times New Roman;font-size:10pt;color:#800000;vertical-align:top;}
+
+.ttrans_pale {color:#a86868}
+
+table.comp tr td.tjtext {font-family: MS Gothic, MS PGothic, Sans Serif; font-size:12pt;vertical-align:top;height:auto;}
+
+table.comp tr td.tjtext a {text-decoration:none; color:black;}
+
+.nanorititle {font-family:Arial; font-size:8pt; font-weight:bold; color:#707000}
+
+.nanori {font-family:Times New Roman; font-size:8pt; font-weight:bold; color:#707000}
+
+.nanorisep {font-weight:normal; font-style:italic;}
+
+.unedtitle {text-decoration:underline;color:#808080;}
+
+.conrad {color:#808080;}
+
+.invis {display:none;}
+
+#tres table {margin: 3px 0px 3px 5px;}
+
+a.tarr {color:#000000;text-decoration:none;font-family:Wingdings;}
+
+a.tarr img {border:0}
+
+/******************** about */
+
+#about h1, #news h1
+{
+	font-family: Verdana, Arial, Helv, Sans-serif;
+	font-size:12pt;
+	margin:7px 0px 3px 7px;
+}	
+
+#about p, #news p
+{
+	margin:0px 0px 3px 7px;
+}
+
+/****************** popup*/
+#tpopup
+{
+	background-color:#b8e0c8;
+	display:none;
+	position:absolute;
+	z-index:1000;
+	border:solid 1px #000000;
+	filter:progid:DXImageTransform.Microsoft.Shadow(direction=135,strength=3);
+}
