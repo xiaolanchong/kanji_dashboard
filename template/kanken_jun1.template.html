@@ -1,0 +1,11 @@
+{% extends "base.template.html" %}
+
+{% block title %}
+    <title>Кандзи кэнтэй 1-го подготовительного уровня</title>
+{% endblock %}
+
+{% block body %}
+    <h1>Кандзи кэнтэй 1-го подготовительного уровня</h1>
+    <div style="margin-bottom: 0.5em;"><a href="index.html">← На главную</a></div>
+    {% for record in records %}<span class="{% if record.level != 'DDD' %}kanji_widget{% endif %} level-dark-{{record.level}}">{{ record.kanji }}</span>{% endfor %}
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base.template.html" %}
+
+{% block title %}
+    <title>Дзиммэйё кандзи</title>
+{% endblock %}
+
+{% block body %}
+    <h1>863 иероглифа, допустимых в личных именах в Японии помимо Дзёё кандзи</h1>
+    <div style="margin-bottom: 0.5em;"><a href="index.html">← На главную</a></div>
+    {% for record in records %}<span class="{% if record.level != 'DDD' %}kanji_widget{% endif %} level-dark-{{record.level}}">{{ record.kanji }}</span>{% endfor %}
+{% endblock %}

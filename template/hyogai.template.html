@@ -1,0 +1,12 @@
+{% extends "base.template.html" %}
+
+{% block title %}
+    <title>Наиболее употребимые хёгайдзи</title>
+{% endblock %}
+
+{% block body %}
+    <h1>Хёгайдзи, наиболее употребимые в печати (印刷標準字体)</h1>
+    <div style="margin-bottom: 0.5em;"><a href="index.html">← На главную</a></div>
+    <div style="margin-bottom: 0.5em;">Наиболее употребимые кандзи за пределами списков Дзёё и Дзиммэйё кандзи (1022)</div>
+    {% for record in records %}<span class="{% if record.level != 'DDD' %}kanji_widget{% endif %} level-dark-{{record.level}}">{{ record.kanji }}</span>{% endfor %}
+{% endblock %}

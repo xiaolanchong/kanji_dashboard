@@ -3,24 +3,24 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Дзёё кандзи с определениями словаря Яркси</title>
 
-	<script src="jquery-3.2.1.min.js"></script>
+    {% block title %} {% endblock %}
+
+    <script src="jquery-3.2.1.min.js"></script>
     <script src="jquery-ui-1.2.1.min.js"></script>
     <link href="jquery-ui-1.2.1.min.css" rel="stylesheet" type="text/css"/>
     <link href="jquery-ui-1.2.1.theme.min.css" rel="stylesheet" type="text/css"/>
     <link href="jquery-ui-1.2.1.structure.min.css" rel="stylesheet" type="text/css"/>
-	<script src="utils.js"></script>
+    <script src="utils.js"></script>
 
     <link href="main.css?v1" rel="stylesheet" type="text/css"/>
     <link href="colors.css" rel="stylesheet" type="text/css"/>
 
-	<link rel="stylesheet" type="text/css" href="yarxi/yarxi.css" />
+    <link rel="stylesheet" type="text/css" href="yarxi/yarxi.css" />
     <script language="javascript" type="text/javascript" src="yarxi/yarxi.js"></script>
     <script language="javascript" type="text/javascript" src="yarxi/collapse.js"></script>
   </head>
   <body>
-    <h1>Дзёё кандзи с определениями словаря Яркси</h1>
-    {% for record in records %}<span class="kanji_widget level-dark-{{record.level}}">{{ record.kanji }}</span>{% endfor %}
+    {% block body %} {% endblock %}
   </body>
 </html>
