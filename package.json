@@ -1,0 +1,32 @@
+{
+  "name": "kanji_dashboard",
+  "version": "1.0.0",
+  "description": "Kanji with popup definitions in one window",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "eslint": "^7.5.0"
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaolanchong/kanji_dashboard.git"
+  },
+  "keywords": [
+    "kanji"
+  ],
+  "author": "Eugene Gorbachev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaolanchong/kanji_dashboard/issues"
+  },
+  "homepage": "https://github.com/xiaolanchong/kanji_dashboard#readme"
+}

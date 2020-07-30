@@ -320,7 +320,7 @@ body
 	overflow-x:scroll;
 	overflow-y:hidden;
 	font-size: 16pt;
-	font-family: MS PGothic,MS Gothic,Arial;
+	font-family: 'Noto Sans JP', MS PGothic,MS Gothic,Meiryo, Arial;
 	white-space:nowrap;
 	display:none;
 }
@@ -394,9 +394,8 @@ body
 #tsearchk table tr td 
 {
 	width:1.2em;
-	font-family: MS Gothic,MS PGothic,Sans Serif;
+	font-family: 'Noto Sans JP', MS Gothic,MS PGothic,Meiryo, Sans Serif;
     font-size:22pt;
-    font-family:MS Mincho,MS PMincho,Meiryo,Serif;
     height:1.2em;
     text-align:center;
     vertical-align:middle;
@@ -447,7 +446,7 @@ body
 	border-style:ridge;
 	text-align:center;
 	font-size:45pt;
-	font-family:MS Mincho,MS PMincho,Meiryo,Serif;
+	font-family: 'Noto Sans JP', MS Mincho,MS PMincho,Meiryo,Serif;
 }
 
 a.kanji {text-decoration:none;}

@@ -89,8 +89,8 @@ def generate_from_list(file_name, old_form_in_parenthesis=False):
         file.write(html)
 
 
-#generate_joyo()
-#generate_hyogai()
-#generate_jinmeiyo()
-#generate_kanken_jun1()
+generate_joyo()
+generate_hyogai()
+generate_jinmeiyo()
+generate_kanken_jun1()
 generate_from_list('kanken_jun1full')
