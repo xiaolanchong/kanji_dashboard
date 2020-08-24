@@ -11,10 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<!--
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
--->
-    <script src="utils.js"></script>
+    <script src="script/utils.js"></script>
 
     <link href="style/main.css" rel="stylesheet" type="text/css"/>
     <link href="style/colors.css" rel="stylesheet" type="text/css"/>
@@ -22,8 +19,20 @@
     <link rel="stylesheet" type="text/css" href="yarxi/yarxi.css" />
     <script src="yarxi/yarxi.js"></script>
     <script src="yarxi/collapse.js"></script>
+    
+    {%- block scripts %} {% endblock %}
   </head>
   <body>
     {% block body %} {% endblock %}
+    
+    <h3>Списки других кандзи</h3>
+    <ul>
+       <li><a href="index.html">Дзёё кандзи</a></li>
+       <li><a href="jinmeiyo.html">Дзиммэйё кандзи (人名用漢字)</a></li>
+       <li><a href="hyogai.html">Хёгайдзи (印刷標準字体)</a></li>
+       <li><a href="kanken_jun1.html">Кандзи кэнтэй 1 подготовительный (漢検 準1級)</a></li>
+       <li><a href="kanken_jun1full.html">Кандзи кэнтэй 1 (漢検 1級)</a></li>
+       <li><a href="joyo_quick.html">Дзёё список для быстрого повторения</a></li>
+    <ul>
   </body>
 </html>
