@@ -14,6 +14,11 @@
         color: white;
         font-size: inherit !important;
     }
+    
+    div {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 
     #mode_panel {
         position: fixed;
@@ -80,7 +85,11 @@
         <input type="checkbox" id="showMeaning" name="showMeaning" checked />
         <label for="showMeaning">Значение</label>
     </div>
-    <table>
+    <div>
+      <label for="shuffleRows">Перемешать строки:</label>
+      <button id="shuffleRows">Перемешать</button>
+    </div>
+    <table id="kanjiTable">
       <thead>
         <tr>
           <th>№</th>
