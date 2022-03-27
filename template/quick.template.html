@@ -1,0 +1,107 @@
+{% extends "base.template.html" %}
+
+{% block title %}
+    <title>{% block title_name %}{% endblock %}</title>
+    
+    <style>
+    body {
+        font-family: Tahoma, Verdana;
+        background-color: black;
+        color: white;
+        font-size: inherit !important;
+    }
+    
+    div {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #mode_panel {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 5px 5px 5px 0px;
+        background: #303030;
+        border-radius: 3px;
+    }
+    
+    .number {
+        font-size: small;
+        color: #cccccc;
+    }
+    .kanji {
+        font-size: 150%;
+        color: wheat;
+    }
+        
+    .meaning_english {
+        font-size: small;
+        color: gray;
+    }
+    .hidden, .hidden > *{
+        color: transparent !important;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #0f0f0f;
+    }
+    </style>
+{% endblock %}
+
+{% block scripts %}
+    <script src="script/joyo_quick.js"></script>
+{% endblock %}
+
+{% block body %}
+    {% block body_header %} {% endblock %}
+
+    <div id="mode_panel" >
+        <input type="checkbox" id="showKanji" name="showKanji" checked />
+        <label for="showKanji">Кандзи</label>
+        
+        <input type="checkbox" id="showOn" name="showOn" checked />
+        <label for="showOn">Оны</label>
+        
+        <input type="checkbox" id="showKun" name="showKun" checked />
+        <label for="showKun">Куны</label>
+
+        <input type="checkbox" id="showMeaning" name="showMeaning" checked />
+        <label for="showMeaning">Значение</label>
+    </div>
+    <div>
+      <label for="shuffleRows">Перемешать строки:</label>
+      <button id="shuffleRows">Перемешать</button>
+    </div>
+    <table id="kanjiTable">
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Кандзи</th>
+          <th>Он-чтения</th>
+          <th>Кун-чтения</th>
+          <th>Значение</th>
+        </tr>
+      </thead>
+      <tbody>
+        {%- for kanji, on, kun, meaning_yarxi, meaning_english in records %}
+        <tr>
+          <td class="number">
+             {{- loop.index -}}
+          </td>
+          <td class="kanji">
+             {{- kanji -}}
+          </td>
+          <td class="on">
+             {{- on -}}
+          </td>
+          <td class="kun">
+             {{- kun -}}
+          </td>
+          <td class="meaning">
+             {{- meaning_yarxi -}} <span class="meaning_english">({{- meaning_english -}})</span>
+          </td>
+        </tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+{% endblock %}
