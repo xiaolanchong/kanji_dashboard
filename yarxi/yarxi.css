@@ -14,8 +14,6 @@ The color of buttons: d9d9d9
 /********************* The global page structure ******/
 body
 {
-	font-family: Verdana, Arial, Helv, Sans-serif;
-	font-size:8pt;
 	margin-top:2px;
 	margin-bottom:0px;
 }
@@ -105,7 +103,7 @@ body
 	color:black;
 }
 
-#tabstrip a:visited:
+#tabstrip a:visited
 {
 	color:Black;
 }
@@ -181,11 +179,6 @@ body
     width:18px;
     height:17px;
     cursor:pointer;
-}
-
-#menufull, #menucoll
-{
-	x-position:absolute;
 }
 
 #menufullimg

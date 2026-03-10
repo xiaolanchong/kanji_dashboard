@@ -95,7 +95,7 @@ glob_env = jinja2.Environment(
     autoescape=jinja2.select_autoescape(['html', 'xml'])
 )
 
-#generate_joyo_html(glob_env)
+generate_joyo_html(glob_env)
 #recs = read_jun1()
 generate_jun1_html(glob_env)
 #print(recs)
